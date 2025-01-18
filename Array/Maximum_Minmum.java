@@ -1,12 +1,14 @@
 import java.util.Arrays;
 
 public class Maximum_Minmum {
+    //max_min using sort function 
     public static void max_min(int []arr){
         Arrays.sort(arr);
         System.out.println("Maximum element is: "+arr[arr.length-1]);
         System.out.println("Minimum element is: "+arr[0]);
     }
 
+    //using_math function is more efficient than using_condition function
     static void using_math(int [] arr){
       if (arr == null || arr.length==0) {
         return;
@@ -20,7 +22,7 @@ public class Maximum_Minmum {
       System.out.println("Maximum element is: "+max);
       System.out.println("Minimum element is: "+min);
     }
-
+//using_condition function is less efficient than using_math function
     static void using_condition(int [] arr){
         if (arr == null || arr.length==0) {return;}
         int min=arr[0];
