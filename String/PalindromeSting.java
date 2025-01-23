@@ -8,15 +8,14 @@ public class PalindromeSting {
     }
 
     public static void main(String[] args) {
-        String inputString = "RAR";
+        String inputString = "Raju";
+        System.out.println(new StringBuffer(inputString.toLowerCase()).reverse() );
         if (isPalindrome(inputString)) {
             System.out.println("\"" + inputString + "\" is a palindrome.");
         } else {
             System.out.println("\"" + inputString + "\" is not a palindrome.");
         }
 
-        while (true) {
-            System.out.println("Hello Ranvijay");
-        }
+      
     }
 }
