@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Reverse {
     static void reverseArray(int[] arr){
         int n=arr.length;
@@ -33,8 +35,14 @@ public class Reverse {
     }
   }
 
+
   public static void main(String[] args) {
-        int [] arr ={1,2,3,4,5,6,7};
+        int [] arr ={1,2,3,4,8,6,7};
+        ArrayList<Integer> arr1 = new ArrayList<>(Arrays.asList(Arrays.stream(arr).boxed().toArray(Integer[]::new)));
+        System.out.println("Original array: "+arr1);
+        Collections.reverse(arr1);
+        System.out.println("Reversed array: "+Arrays.toString(arr1.toArray()));
+
         // reverseArray(arr);
         // swapping_elements(arr);
         twopointers(arr);

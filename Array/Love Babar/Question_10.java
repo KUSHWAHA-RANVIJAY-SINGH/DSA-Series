@@ -28,8 +28,21 @@ public class Question_10 {
         }
         return -1;
    }
+
+   //contains duplicate;
+   private static boolean containsDuplicate(int arr[]){
+        HashSet<Integer> set =new HashSet<>();
+        for(int i : arr){
+            if (set.contains(i)) {
+                return true;
+            }
+            set.add(i);
+        }
+        return false;
+   }
     public static void main(String[] args) {
         int [] arr ={1,2,3,4,5,2};
+        System.out.println(containsDuplicate(arr));
         int duplicate=  findduplicateoptimal(arr);
         if (duplicate !=-1) {
             System.out.println("Duplicate found " + duplicate);
