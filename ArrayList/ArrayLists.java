@@ -1,3 +1,6 @@
+//Array list in java
+// An ArrayList in Java is a resizable array, which can be found in the java.util package. Unlike arrays, ArrayLists can dynamically grow and shrink as you add or remove elements. Here are some key points about ArrayLists:
+
 import java.util.Collections;
 import java.util.ArrayList; 
 public class ArrayLists{
@@ -28,5 +31,11 @@ public class ArrayLists{
         //sorting 
         Collections.sort(list);
         System.out.println(list);
+
+        System.out.println(list.toString());
+
+        for(String value : list){
+            System.out.println(value);
+        }
     }
 }

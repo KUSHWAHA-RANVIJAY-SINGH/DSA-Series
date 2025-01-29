@@ -1,0 +1,13 @@
+Java HashSet class is used to create a collection that uses a hash table for storage. It inherits the AbstractSet class and implements Set interface. 
+
+A HashSet in Java is a collection class that implements the Set interface, which means it stores a collection of unique elements. Here are some key points about HashSet:
+
+Unique Elements: HashSet does not allow duplicate elements.
+
+Null Value: It allows a single null value.
+
+Order: It does not maintain the insertion order of elements.
+
+Performance: It provides constant-time performance for basic operations like add, remove, and contains, assuming a good hash function.
+
+Non-Synchronized: HashSet is not synchronized, meaning it is not thread-safe. If you need a synchronized version, you can use Collections.synchronizedSet(new HashSet<...>()).

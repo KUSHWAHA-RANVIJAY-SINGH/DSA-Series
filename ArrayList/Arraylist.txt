@@ -1,0 +1,78 @@
+Array list in java
+An ArrayList in Java is a resizable array, which can be found in the java.util package. Unlike arrays, ArrayLists can dynamically grow and shrink as you add or remove elements. Here are some key points about ArrayLists:
+
+
+Initialization: You can create an ArrayList using:
+
+java
+ArrayList<String> list = new ArrayList<>();
+Adding Elements: Use the add() method to add elements:
+
+java
+list.add("Hello");
+list.add("World");
+Accessing Elements: Use the get() method to access elements:
+
+java
+String element = list.get(0); // "Hello"
+Removing Elements: Use the remove() method to remove elements:
+
+java
+list.remove(1); // Removes "World"
+Size of the List: Use the size() method to get the number of elements:
+
+java
+int size = list.size(); // 1
+Iterating Over Elements: You can use a for-each loop to iterate over elements:
+
+java
+for (String item : list) {
+    System.out.println(item);
+}
+ArrayLists are quite versatile and are commonly used when you need a dynamic array. Do you have a specific use case or question about ArrayLists?
+
+
+//In Java, the ArrayList class is part of the java.util package and implements the List interface. An ArrayList is a resizable array implementation of the list interface, which can dynamically grow and shrink as elements are added or removed. Below is a list of commonly used methods available in the ArrayList class, along with brief explanations of each:
+
+Common ArrayList Methods
+Adding Elements
+
+void add(E e): Appends the specified element to the end of the list.
+void add(int index, E element): Inserts the specified element at the specified position in the list.
+boolean addAll(Collection<? extends E> c): Appends all elements in the specified collection to the end of the list.
+boolean addAll(int index, Collection<? extends E> c): Inserts all elements in the specified collection into the list, starting at the specified position.
+Removing Elements
+
+E remove(int index): Removes the element at the specified position in the list.
+boolean remove(Object o): Removes the first occurrence of the specified element from the list, if it is present.
+boolean removeAll(Collection<?> c): Removes from the list all elements that are contained in the specified collection.
+boolean retainAll(Collection<?> c): Retains only the elements in the list that are contained in the specified collection.
+void clear(): Removes all elements from the list.
+Accessing Elements
+
+E get(int index): Returns the element at the specified position in the list.
+int indexOf(Object o): Returns the index of the first occurrence of the specified element, or -1 if the list does not contain the element.
+int lastIndexOf(Object o): Returns the index of the last occurrence of the specified element, or -1 if the list does not contain the element.
+E set(int index, E element): Replaces the element at the specified position in the list with the specified element.
+Size and Capacity
+
+int size(): Returns the number of elements in the list.
+boolean isEmpty(): Returns true if the list contains no elements.
+void ensureCapacity(int minCapacity): Increases the capacity of the list, if necessary, to ensure that it can hold at least the number of elements specified by the minimum capacity argument.
+void trimToSize(): Trims the capacity of the list to be the list's current size.
+Iterating Over Elements
+
+Iterator<E> iterator(): Returns an iterator over the elements in this list in proper sequence.
+ListIterator<E> listIterator(): Returns a list iterator over the elements in this list (in proper sequence).
+ListIterator<E> listIterator(int index): Returns a list iterator starting at the specified position in this list.
+Sublist and Conversions
+
+List<E> subList(int fromIndex, int toIndex): Returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+Object[] toArray(): Returns an array containing all of the elements in this list in proper sequence (from first to last element).
+<T> T[] toArray(T[] a): Returns an array containing all of the elements in this list in proper sequence; the runtime type of the returned array is that of the specified array.
+Other Methods
+
+boolean contains(Object o): Returns true if the list contains the specified element.
+void replaceAll(UnaryOperator<E> operator): Replaces each element of this list with the result of applying the operator to that element.
+void sort(Comparator<? super E> c): Sorts this list according to the order induced by the specified Comparator.
+void forEach(Consumer<? super E> action): Performs the given action for each element of the Iterable until all elements have been processed or the action throws an exception.
