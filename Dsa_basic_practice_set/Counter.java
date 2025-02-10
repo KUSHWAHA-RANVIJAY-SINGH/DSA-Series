@@ -14,23 +14,15 @@ public class Counter {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter a number");
         int n=sc.nextInt();
-        prime(n);
-        System.out.println();
+        int numberofdigit = count(n);
+        System.out.println("The number of digit in "+n +" is: " +numberofdigit);
+        int count =0;
+        while (n>0) {
+            n =n/10;
+            count++;
+        }
+        System.out.println(count);
     }
 
-    static void prime(int n){
-        int count =0;
-        for (int div = 1; div<= n; div ++) {
-            if (n%div ==0) {    
-                count++;                
-            } 
-        }
-        if (count ==2) {
-            System.out.println(n+" is a prime number");
-            
-        }
-        else{
-            System.out.println(n+"is not a prime number");
-        }
-    }
+    
 }

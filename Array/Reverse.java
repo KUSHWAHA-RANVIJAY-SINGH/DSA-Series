@@ -40,14 +40,15 @@ public class Reverse {
         int [] arr ={1,2,3,4,8,6,7};
         ArrayList<Integer> arr1 = new ArrayList<>(Arrays.asList(Arrays.stream(arr).boxed().toArray(Integer[]::new)));
         System.out.println("Original array: "+arr1);
+     
         Collections.reverse(arr1);
         System.out.println("Reversed array: "+Arrays.toString(arr1.toArray()));
 
         // reverseArray(arr);
         // swapping_elements(arr);
         twopointers(arr);
-        for(int i=0;i<arr.length;i++){
-            System.out.print(arr[i]+" ");
-        }
+       for (int i = 0; i < arr.length; i++) {
+         System.out.print(arr[i]);
+       }
     }
 }
