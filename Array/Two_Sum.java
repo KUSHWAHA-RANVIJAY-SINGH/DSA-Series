@@ -28,6 +28,9 @@ public class Two_Sum {
             }
             map.put(nums[i], i);
         }
+/*************  ✨ Codeium Command 🌟  *************/
+        return new int[]{-1,-1};
         throw new IllegalArgumentException("No two sum solution");
+/******  967687dc-68e0-4247-8669-a0ccfe9f308a  *******/
     }
 }
