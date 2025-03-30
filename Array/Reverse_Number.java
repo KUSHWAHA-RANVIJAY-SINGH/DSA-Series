@@ -34,4 +34,19 @@ public class Reverse_Number {
             System.out.println(n + " is not a palindrome number");
         }
     }
+public static String reverseString(String input) {
+    StringBuilder reversed = new StringBuilder(input);
+    return reversed.reverse().toString();
+}
+
+public static void reverseStringArray(String[] arr) {
+    int left = 0, right = arr.length - 1;
+    while (left < right) {
+        String temp = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
+        left++;
+        right--;
+    }
+}
 }
