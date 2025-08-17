@@ -1,0 +1,23 @@
+//NOTE - // Oops Concepts 
+
+// Oops Concepts:
+
+// 1. Inheritance: Inheritance is the process by which one object can inherit the properties, methods, and behavior of another object.
+
+// 2. Polymorphism: Polymorphism is the ability of an object to take on multiple forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
+
+// 3. Encapsulation: Encapsulation is the process of hiding the implementation details of an object from the outside world and only exposing the necessary information through public methods.
+
+// 4. Abstraction: Abstraction is the process of showing only the essential features of an object while hiding the non-essential features.
+
+// 5. Composition: Composition is the process of combining objects to form new objects. The composed object is responsible for the lifetime of the object it is composed of.
+
+// 6. Interface Segregation Principle (ISP): ISP states that a client should not be forced to depend on interfaces it does not use. Instead, interfaces should be designed to meet the needs of specific clients.
+
+// 7. Single Responsibility Principle (SRP): SRP states that a class should have only one reason to change. This means that a class should have only one responsibility.
+
+// 8. Dependency Inversion Principle (DIP): DIP states that a class should not directly depend on another class. Instead, both classes should depend on a common interface.
+
+// 9. Liskov Substitution Principle (LSP): LSP states that a sub-class should be able to be used in place of its parent class without affecting the correctness of the program.
+
+// 10. Interface Segregation Principle (ISP): ISP states that a client should not be forced to depend on interfaces it does not use. Instead, interfaces should be designed to meet the needs of specific clients.
